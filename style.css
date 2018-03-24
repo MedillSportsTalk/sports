@@ -1,0 +1,331 @@
+		a:link{
+		  /* Applies to all unvisited links */
+		  text-decoration:  none;
+		  color:            white;
+		  } 
+		a:visited {
+		  /* Applies to all visited links */
+		  text-decoration:  none;
+		  color:            white;
+		  } 
+		a:hover   {
+		  /* Applies to links under the pointer */
+		  text-decoration:  none;
+		  color:            #4F2D84;
+		  } 
+		a:active  {
+		  /* Applies to activated links */
+		  text-decoration:  none;
+		  color: #4F2D84;
+		  } 
+
+		.segment a:link{
+		  /* Applies to all unvisited links */
+		  text-decoration:  none;
+		  color:            #4F2D84;
+		  text-shadow: .5px .5px black;
+		  } 
+		.segment a:visited {
+		  /* Applies to all visited links */
+		  text-decoration:  none;
+		  color:            #4F2D84;
+		  } 
+		.segment a:hover   {
+		  /* Applies to links under the pointer */
+		  text-decoration:  none;
+		  color:            white;
+		  text-shadow: 1px 1px black;
+		  } 
+		.segment a:active  {
+		  /* Applies to activated links */
+		  text-decoration:  none;
+		  color: #4F2D84;
+		  } 
+header, .body {
+	font-family: Avenir;
+}
+
+.body {
+	background-color: ghostwhite;
+}
+
+#Follow{
+	position: absolute;
+	top: 5px;
+	right:10px;
+}
+
+h1{
+	text-align: center;
+}
+
+
+.topnav{
+	background-color: black;
+	overflow: hidden;
+	margin-top: -8px;
+	margin-left: -8px;
+	margin-right: -8px;
+	align-items: center;
+}
+
+.topnav a {
+	float:left;
+	display: block;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+h1{
+	font-size: 35px;
+}
+
+h3{
+	font-size: calc(12px + 0.5vw);
+}
+
+.MST{
+	position:relative;
+	background-color: #4F2D84;
+	color: white;
+	padding: 1px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background: repeating-linear-gradient(
+  45deg,
+  #4F2D84,
+  #4F2D84 15px,
+  #62309F 15px,
+  #62309F 28px);
+}
+
+.main{
+	width: 80%;
+	padding-top: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+/* videos of the week */
+.segment {
+	padding: 25px;
+}
+
+
+.episode {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 2px solid #4F2D84;
+}
+
+/* social media video */
+#socialmedia{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.socialhost img {
+	float: left;
+	width: 40%;
+	padding-right: 10px;
+	margin-top: -15px;
+}
+
+.socialhost p {
+	width: 90%;
+	font-size: 14px;
+	margin-top: -20px;
+	padding-top: 5px;
+}
+
+.socialhost h4{
+	width: 95%;
+}
+
+#socialweek, .socialhost{
+	padding: 25px;
+}
+
+
+
+
+/* Twitter Feed */
+#Twitter {
+	width: 40%;
+	margin: 25px auto;
+}
+
+
+/* Sports pages */
+.SPORTS {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-around;
+	border-bottom: 2px solid #4F2D84;
+	padding-bottom: 20px;
+}
+
+#ep5staff {
+	width: 40%;
+	margin-top: 45px;
+}
+
+.sportsepisode {
+	width: 50%;
+}
+
+h2 {
+	text-align: center;
+}
+
+#backtotop a{
+	font-size: 20px;
+	background-color: #4F2D84;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#backtotop{
+	text-align: center;
+}
+
+		#backtotop a:link{
+		  /* Applies to all unvisited links */
+		  text-decoration:  none;
+		  color:            white;
+		  } 
+		#backtotop a:hover   {
+		  /* Applies to links under the pointer */
+		  text-decoration:  none;
+		  color:            black;
+		  } 
+
+.modalDialog {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
+
+    .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .close:hover { background: #00d9ff; }
+
+@media only screen and (max-width: 700px){
+	.SPORTS{
+		flex-direction: column;
+		align-items: center;
+		width: 100%
+	}
+	.sportsepisode{
+		width: 80%;
+	}
+	#ep5staff{
+		width: 80%;
+		margin-top: 0;
+	}
+}
+
+
+@media only screen and (max-width: 1000px){
+	.episode {
+		flex-direction: column;
+		text-align: center;
+	}
+	#socialmedia video{
+		width: 100%;
+	}
+
+	#socialmedia{
+		flex-direction: column-reverse;
+	}
+	
+	#Twitter{
+		width: 60%;
+	}
+
+	#socialweek{
+		margin-right: 0px;
+	}
+
+	.socialhost img{
+		width: 40%;
+	}
+
+	.socialhost{
+		position: static;
+	}
+}
+
+@media only screen and (max-width: 605px){
+	.topnav a:not(:first-child) {display:none;}
+	.topnav a.icon {
+		float:right;
+		display: block;
+	}
+	.topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+      .modalDialog > div{
+        width: 70%;
+    }
+}
+
